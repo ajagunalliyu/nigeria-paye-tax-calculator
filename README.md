@@ -5,7 +5,7 @@
 
 ---
 
-![](Tax_calcculator_excel_interface.png)
+![](Tax_calculator.png)
 
 ## Table of Contents
 
