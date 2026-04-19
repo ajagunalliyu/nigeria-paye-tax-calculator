@@ -95,7 +95,7 @@ The tool supports all standard PITA-recognised deductions, applied **before** ta
 
 ## How to Use
 
-1. **Open** `Tax_Calculator.xlsx` in Microsoft Excel (2016 or later recommended)
+1. **Open** `Tax_Calculator.xlsx` in Microsoft Excel (2016 or later recommended) [here](https://docs.google.com/spreadsheets/d/1jPv-eAd7dQgBNd7Ic3BHBuh1m4WQ9yFt-HXyfOJG1tE/edit?usp=sharing)
 2. **Enter your income** in one of two cells:
    - `Monthly Income (₦)` — if you know your monthly gross pay
    - `Annual Income (₦)` — if you know your annual gross pay
