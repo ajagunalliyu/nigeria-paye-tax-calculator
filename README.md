@@ -173,10 +173,14 @@ Built entirely in Excel with zero macros, it is lightweight, portable, and immed
 
 ## Connect With Me
 
-- **LinkedIn:** [Alliyu Ajagun](https://www.linkedin.com/in/alliyuajagun)
-- **Email:** ajagunalliyu@gmail.com
-
+Want to know more?  
+> Feel free to reach out: [ajagunalliyu@gmail.com](mailto:ajagunalliyu@gmail.com)  
+> Connect with me on [LinkedIn](https://www.linkedin.com/in/alliyuajagun)  
+> Follow on [Twitter/X](https://x.com/Sayyid_Alliyu)  
+> Read more on [Medium](https://medium.com/@ajagunalliyu)  
+> 💻 Explore more projects on [GitHub](https://github.com/ajagunalliyu)
 ---
 
 **Prepared by:**  
 **Alliyu Ajagun Aremu**
+
