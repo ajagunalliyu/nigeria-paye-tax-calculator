@@ -5,6 +5,8 @@
 
 ---
 
+![](Tax_calcculator_excel_interface.png)
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
