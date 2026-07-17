@@ -45,7 +45,7 @@ The tool supports all standard PITA-recognised deductions, applied **before** ta
 
 > **Note:** Pension, NHIS deductions are automatically calculated from the gross income entered. Rent, NHF, Life Insurance, and Mortgage Interest require manual input of the actual amounts paid.
 
-## Tax Band Structure
+### Tax Band Structure
 
 The calculator applies Nigeria's PAYE progressive tax bands as follows:
 
@@ -58,9 +58,9 @@ The calculator applies Nigeria's PAYE progressive tax bands as follows:
 | ₦25,000,001 – ₦50,000,000 | 23% | Applied only to income within this band |
 | Above ₦50,000,000 | 25% | Applied to all income above ₦50M |
 
-> **Important:** Tax is calculated **progressively** — each band is taxed at its own rate, not the whole income at one rate. This is a common source of misunderstanding that this tool resolves transparently.
+> **Important:** Tax is calculated **progressively** - each band is taxed at its own rate, not the whole income at one rate. This is a common source of misunderstanding that this tool resolves transparently.
 
-## How to Use
+### How to Use
 
 1. **Open** `Tax_Calculator.xlsx` in Microsoft Excel (2016 or later recommended) [here](https://docs.google.com/spreadsheets/d/1jPv-eAd7dQgBNd7Ic3BHBuh1m4WQ9yFt-HXyfOJG1tE/edit?usp=sharing)
 2. **Enter your income** in one of two cells:
@@ -82,7 +82,7 @@ The calculator applies Nigeria's PAYE progressive tax bands as follows:
 
 Link: [Google Sheets version](https://docs.google.com/spreadsheets/d/1jPv-eAd7dQgBNd7Ic3BHBuh1m4WQ9yFt-HXyfOJG1tE/edit?usp=sharing)
 
-## Conclusion
+### Conclusion
 
 This tool strips away the complexity of Nigerian PAYE tax computation and puts a clear, auditable, and reusable calculator in the hands of anyone who needs it. Whether you are an employee reconciling your payslip, an HR officer verifying payroll deductions, or an accountant doing quick client estimates — this calculator delivers accurate, band-by-band results with full transparency into the underlying logic.
 
