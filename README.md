@@ -9,7 +9,7 @@
 
 Nigerian employees, HR teams, and accountants routinely misjudge take-home pay because PAYE tax is progressive. Each income band is taxed at its own rate, and that logic is invisible on a standard payslip. I built a fully formula-driven Excel tool (zero macros, zero VBA) that takes either monthly or annual income, applies Nigeria's 6-band PAYE structure and all PITA-recognised deductions, and returns an auditable, band-by-band tax breakdown alongside the effective tax rate. Every formula is visible in the cell, so the result isn't a black box — it's a teaching tool as much as a calculator.
 
-### The Business Problem
+### The Problem
 
 Nigeria's PAYE system taxes income progressively across 6 bands (0% up to ₦800,000, rising to 25% above ₦50M), plus capped/percentage-based reliefs for rent, pension, NHIS, NHF, life insurance, and mortgage interest. Most people either estimate their tax with a flat-rate guess or rely on opaque payroll software. There was no simple, transparent, self-serve tool for individuals to check their own numbers.
 
@@ -17,8 +17,11 @@ Nigeria's PAYE system taxes income progressively across 6 bands (0% up to ₦800
 
 
 Build: pure Excel formula engine - no macros
+
 Logic flow: Income Input → Gross Annual Income derived → Deductions applied → Taxable Income → Progressive band tax → Total Tax Due & Net Income
+
 Key formulas: conditional monthly/annual detection (IF(Annual>0, Annual, Monthly×12)), per-band tax (MAX(0, MIN(Taxable, Ceiling) − Floor) × Rate), capped rent relief (MIN(20% × Annual Rent, ₦500,000)), auto-calculated pension (8% of gross) and NHIS (2.5% of gross)
+
 Compliance basis: Personal Income Tax Act (PITA) as amended, current FIRS PAYE guidelines; employee-side tax only
 
 
