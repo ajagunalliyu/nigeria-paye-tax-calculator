@@ -1,5 +1,5 @@
 
-# 🧾 Nigerian Personal Income Tax Calculator  Excel Tool
+# Nigerian Personal Income Tax Calculator  Excel Tool
 
 > An interactive, formula-driven Microsoft Excel tool for computing Nigerian Personal Income Tax (PIT) in compliance with the PAYE progressive tax bracket system — with built-in allowable deduction support.
 
