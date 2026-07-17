@@ -60,10 +60,10 @@ The calculator applies Nigeria's PAYE progressive tax bands as follows:
 
 1. **Open** `Tax_Calculator.xlsx` in Microsoft Excel (2016 or later recommended) [here](https://docs.google.com/spreadsheets/d/1jPv-eAd7dQgBNd7Ic3BHBuh1m4WQ9yFt-HXyfOJG1tE/edit?usp=sharing)
 2. **Enter your income** in one of two cells:
-   - `Monthly Income (₦)` — if you know your monthly gross pay
-   - `Annual Income (₦)` — if you know your annual gross pay
-   - *(Enter only one — the other should remain 0)*
-3. **Check the status prompt** — it confirms which income type was detected
+   - `Monthly Income (₦)` - if you know your monthly gross pay
+   - `Annual Income (₦)` - if you know your annual gross pay
+   - *(Enter only one - the other should remain 0)*
+3. **Check the status prompt** - it confirms which income type was detected
 4. **Enter applicable deductions** in the Allowable Deductions panel:
    - Input your **annual rent** (tool auto-calculates the capped 20% relief)
    - NHF, Life Insurance, and Mortgage Interest inputs if applicable
