@@ -1,5 +1,5 @@
 
-# 🧾 Nigerian Personal Income Tax Calculator — Excel Tool
+# 🧾 Nigerian Personal Income Tax Calculator  Excel Tool
 
 > An interactive, formula-driven Microsoft Excel tool for computing Nigerian Personal Income Tax (PIT) in compliance with the PAYE progressive tax bracket system — with built-in allowable deduction support.
 
@@ -7,59 +7,40 @@
 
 ![](Tax_calculator.png)
 
-## Table of Contents
+Nigerian employees, HR teams, and accountants routinely misjudge take-home pay because PAYE tax is progressive. Each income band is taxed at its own rate, and that logic is invisible on a standard payslip. I built a fully formula-driven Excel tool (zero macros, zero VBA) that takes either monthly or annual income, applies Nigeria's 6-band PAYE structure and all PITA-recognised deductions, and returns an auditable, band-by-band tax breakdown alongside the effective tax rate. Every formula is visible in the cell, so the result isn't a black box — it's a teaching tool as much as a calculator.
 
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [How It Works](#how-it-works)
-- [Tax Band Structure](#tax-band-structure)
-- [Allowable Deductions](#allowable-deductions)
-- [How to Use](#how-to-use)
-- [Formula Logic](#formula-logic)
-- [Assumptions & Compliance Notes](#assumptions--compliance-notes)
-- [Tools Used](#tools-used)
-- [Files in This Repository](#files-in-this-repository)
-- [Conclusion](#conclusion)
+### The Business Problem
 
----
+Nigeria's PAYE system taxes income progressively across 6 bands (0% up to ₦800,000, rising to 25% above ₦50M), plus capped/percentage-based reliefs for rent, pension, NHIS, NHF, life insurance, and mortgage interest. Most people either estimate their tax with a flat-rate guess or rely on opaque payroll software. There was no simple, transparent, self-serve tool for individuals to check their own numbers.
 
-## Project Overview
+### Data & Method
 
-### Title: Nigerian Personal Income Tax (PIT) Calculator — Excel-Based Tool
 
-This project is a practical, ready-to-use Excel tool that automates the calculation of Nigerian Personal Income Tax under the **Pay-As-You-Earn (PAYE)** system. It applies the **progressive tax bracket structure** as defined by Nigeria's Personal Income Tax Act (PITA), while accommodating all standard **allowable deductions** — including pension (PFA), NHIS, NHF, rent relief, life insurance, and mortgage interest.
+Build: pure Excel formula engine - no macros
+Logic flow: Income Input → Gross Annual Income derived → Deductions applied → Taxable Income → Progressive band tax → Total Tax Due & Net Income
+Key formulas: conditional monthly/annual detection (IF(Annual>0, Annual, Monthly×12)), per-band tax (MAX(0, MIN(Taxable, Ceiling) − Floor) × Rate), capped rent relief (MIN(20% × Annual Rent, ₦500,000)), auto-calculated pension (8% of gross) and NHIS (2.5% of gross)
+Compliance basis: Personal Income Tax Act (PITA) as amended, current FIRS PAYE guidelines; employee-side tax only
 
-The tool is designed for employees, HR professionals, accountants, and individuals who want a clear, transparent breakdown of how their tax liability is computed — moving beyond guesswork to a structured, formula-based calculation.
 
----
+### Interface
+![](Tax_calculator.png)
 
-## Features
+"Progressive taxation means no one pays their top rate on their whole income" - the tool resolves the most common misunderstanding about Nigerian tax by showing the band-by-band split explicitly.
 
-- ✅ **Dual income input** — enter either monthly or annual income; the calculator auto-converts
-- ✅ **Smart input detection** — dynamically detects which income field has been filled and confirms it to the user
-- ✅ **Progressive tax computation** — applies Nigeria's 6-band PAYE structure accurately, taxing each income slice at the correct rate
-- ✅ **Allowable deductions panel** — enter deductions (rent, pension, NHIS, NHF, life insurance, mortgage) and the tool auto-calculates applicable relief
-- ✅ **Capped and percentage-based deduction logic** — e.g. Rent Relief is automatically capped at ₦500,000 (20% of annual rent); Pension auto-calculates at 8% of gross income
-- ✅ **Monthly and annual output** — results displayed in both timeframes for easy payslip reconciliation
-- ✅ **Estimated effective tax rate** — shows the blended tax rate as a percentage of gross income
-- ✅ **Full tax breakdown table** — shows exactly how much is taxed in each income band and the corresponding tax due per band
+### Allowable Deductions
 
----
+The tool supports all standard PITA-recognised deductions, applied **before** tax is computed to arrive at **Taxable Income**:
 
-## How It Works
+| Deduction | Basis | Cap / Rule |
+|---|---|---|
+| **Rent Relief** | 20% of annual rent paid | Capped at ₦500,000 |
+| **Pension (PFA)** | 8% of gross income | Auto-calculated |
+| **Health (NHIS)** | 2.5% of gross income | Auto-calculated |
+| **Housing (NHF)** | National Housing Fund contributions | Fully deductible |
+| **Life Insurance** | Life insurance premiums paid | Fully deductible |
+| **Mortgage Interest** | Interest on residential mortgage | Fully deductible |
 
-The calculator follows a 4-step computation flow:
-
-```
-Step 1 → Income Input (Monthly or Annual)
-Step 2 → Gross Annual Income Derived
-Step 3 → Allowable Deductions Applied → Taxable Income Computed
-Step 4 → Progressive Tax Bands Applied → Total Tax Due & Net Income Output
-```
-
-All calculations are powered entirely by **Excel formulas** — no macros, no VBA. The workbook is fully transparent; every formula is visible and auditable in the cells.
-
----
+> **Note:** Pension, NHIS deductions are automatically calculated from the gross income entered. Rent, NHF, Life Insurance, and Mortgage Interest require manual input of the actual amounts paid.
 
 ## Tax Band Structure
 
@@ -75,25 +56,6 @@ The calculator applies Nigeria's PAYE progressive tax bands as follows:
 | Above ₦50,000,000 | 25% | Applied to all income above ₦50M |
 
 > **Important:** Tax is calculated **progressively** — each band is taxed at its own rate, not the whole income at one rate. This is a common source of misunderstanding that this tool resolves transparently.
-
----
-
-## Allowable Deductions
-
-The tool supports all standard PITA-recognised deductions, applied **before** tax is computed to arrive at **Taxable Income**:
-
-| Deduction | Basis | Cap / Rule |
-|---|---|---|
-| **Rent Relief** | 20% of annual rent paid | Capped at ₦500,000 |
-| **Pension (PFA)** | 8% of gross income | Auto-calculated |
-| **Health (NHIS)** | 2.5% of gross income | Auto-calculated |
-| **Housing (NHF)** | National Housing Fund contributions | Fully deductible |
-| **Life Insurance** | Life insurance premiums paid | Fully deductible |
-| **Mortgage Interest** | Interest on residential mortgage | Fully deductible |
-
-> **Note:** Pension, NHIS deductions are automatically calculated from the gross income entered. Rent, NHF, Life Insurance, and Mortgage Interest require manual input of the actual amounts paid.
-
----
 
 ## How to Use
 
@@ -115,55 +77,7 @@ The tool supports all standard PITA-recognised deductions, applied **before** ta
    - Estimated Effective Tax Rate (%)
 6. **Review the tax band breakdown table** to see exactly how your tax is sliced across each band
 
----
-
-## Formula Logic
-
-Key formulas powering the calculator (for transparency and auditability):
-
-| Output | Formula Logic |
-|---|---|
-| Gross Annual Income | `=IF(Annual>0, Annual, Monthly × 12)` |
-| Gross Monthly Income | `=IF(Monthly>0, Monthly, Annual ÷ 12)` |
-| Total Deductions | `=SUM(Rent Relief + Pension + NHIS + NHF + Life Insurance + Mortgage)` |
-| Taxable Income | `=MAX(0, Gross Annual – Total Deductions)` |
-| Tax per Band | `=MAX(0, MIN(Taxable Income, Band Ceiling) – Band Floor) × Band Rate` |
-| Total Tax | `=SUM(Tax across all 6 bands)` |
-| Income After Tax | `=Taxable Income – Total Tax + Rent Relief applied` |
-| Effective Tax Rate | `=Total Tax ÷ Gross Annual Income` |
-| Rent Relief | `=MIN(20% × Annual Rent, 500,000)` |
-| Pension (PFA) | `=8% × Gross Annual Income` |
-| NHIS | `=2.5% × Gross Annual Income` |
-
----
-
-## Assumptions & Compliance Notes
-
-- The tax bands used are based on the **Personal Income Tax Act (PITA) as amended**, reflecting current FIRS PAYE guidelines
-- The **first ₦800,000** of annual income attracts a **0% tax rate** (Consolidated Relief Allowance provision)
-- This tool computes **employee-side tax only** — employer contributions (e.g. employer pension match) are not included
-- Pension is computed as **8% of gross income** as a standard estimate; actual pension basis (basic + housing + transport) may vary by employer — users may override the auto-calculated pension value where the actual figure is known
-- This tool is intended for **planning and estimation purposes** — for formal tax filings, consult a certified tax professional or FIRS-registered tax consultant
-
----
-
-## Tools Used
-
-| Tool | Purpose |
-|---|---|
-| Microsoft Excel | Full tool development — formulas, layout, UX design |
-| Excel Formula Engine | Progressive tax logic, deduction caps, conditional input detection |
-
----
-
-## Files in This Repository
-
-| File | Description |
-|---|---|
-| `Tax_Calculator.xlsx` | The fully functional Excel-based tax calculator |
-| `README.md` | Project documentation (this file) |
-
----
+Link: [Google Sheets version](https://docs.google.com/spreadsheets/d/1jPv-eAd7dQgBNd7Ic3BHBuh1m4WQ9yFt-HXyfOJG1tE/edit?usp=sharing)
 
 ## Conclusion
 
@@ -171,18 +85,12 @@ This tool strips away the complexity of Nigerian PAYE tax computation and puts a
 
 Built entirely in Excel with zero macros, it is lightweight, portable, and immediately usable by anyone with a basic understanding of spreadsheets.
 
----
-
-## Connect With Me
-
-Want to know more?  
+## Let's Connect
+ 
 > Feel free to reach out: [ajagunalliyu@gmail.com](mailto:ajagunalliyu@gmail.com)  
 > Connect with me on [LinkedIn](https://www.linkedin.com/in/alliyuajagun)  
 > Follow on [Twitter/X](https://x.com/Sayyid_Alliyu)  
 > Read more on [Medium](https://medium.com/@ajagunalliyu)  
 > 💻 Explore more projects on [GitHub](https://github.com/ajagunalliyu)
----
-
-**Prepared by:**  
-**Alliyu Ajagun Aremu**
+> View [Portfolio website](https://sites.google.com/view/alliyutheanalyst/portfolio?authuser=0)
 
