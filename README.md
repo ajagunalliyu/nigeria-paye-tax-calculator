@@ -20,7 +20,7 @@ Nigeria's PAYE system taxes income progressively across 6 bands (0% up to ₦800
 
 
 ### Interface
-[Excel_Workbook](assets/Tax_Calculator.xlsx)
+[Excel_Workbook](data/Tax_Calculator.xlsx)
 
 "Progressive taxation means no one pays their top rate on their whole income" - the tool resolves the most common misunderstanding about Nigerian tax by showing the band-by-band split explicitly.
 
