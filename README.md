@@ -76,8 +76,8 @@ The calculator applies Nigeria's PAYE progressive tax bands as follows:
 
 ![](assets/Tax_calculator_sample_income.png)
 
-Link: [Google Sheets version](https://docs.google.com/spreadsheets/d/1jPv-eAd7dQgBNd7Ic3BHBuh1m4WQ9yFt-HXyfOJG1tE/edit?usp=sharing)     
-       [Report](https://www.linkedin.com/posts/alliyuajagun_nigeriatax-dataanalytics-creatingsolutions-activity-7419287573128331264-UJNh?utm_source=share&utm_medium=member_desktop&rcm=ACoAADbwyMIBn3WzxEGtgixqyP6VebsPXdaY1jY)
+[Google Sheets version](https://docs.google.com/spreadsheets/d/1jPv-eAd7dQgBNd7Ic3BHBuh1m4WQ9yFt-HXyfOJG1tE/edit?usp=sharing)     
+[Report](https://www.linkedin.com/posts/alliyuajagun_nigeriatax-dataanalytics-creatingsolutions-activity-7419287573128331264-UJNh?utm_source=share&utm_medium=member_desktop&rcm=ACoAADbwyMIBn3WzxEGtgixqyP6VebsPXdaY1jY)
 
 ### Conclusion
 
