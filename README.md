@@ -2,8 +2,9 @@
 # Nigerian Personal Income Tax Calculator  Excel Tool
 
 > An interactive, formula-driven Microsoft Excel tool for computing Nigerian Personal Income Tax (PIT) in compliance with the PAYE progressive tax bracket system - with built-in allowable deduction support.
+![](assets/Tax_calculator.png)
 
-Nigerian employees, HR teams, and accountants routinely misjudge take-home pay because PAYE tax is progressive. Each income band is taxed at its own rate, and that logic is invisible on a standard payslip. I built a fully formula-driven Excel tool (zero macros, zero VBA) that takes either monthly or annual income, applies Nigeria's 6-band PAYE structure and all PITA-recognised deductions, and returns an auditable, band-by-band tax breakdown alongside the effective tax rate. Every formula is visible in the cell, so the result isn't a black box — it's a teaching tool as much as a calculator.
+Nigerian employees, HR teams, and accountants routinely misjudge take-home pay because PAYE tax is progressive. Each income band is taxed at its own rate, and that logic is invisible on a standard payslip. I built a fully formula-driven Excel tool (zero macros, zero VBA) that takes either monthly or annual income, applies Nigeria's 6-band PAYE structure and all PITA-recognised deductions, and returns an auditable, band-by-band tax breakdown alongside the effective tax rate. Every formula is visible in the cell, so the result isn't a black box, it's a teaching tool as much as a calculator.
 
 ### The Problem
 
@@ -22,7 +23,7 @@ Compliance basis: Personal Income Tax Act (PITA) as amended, current FIRS PAYE g
 
 
 ### Interface
-![](Tax_calculator.png)
+[Excel_Workbok](assets/Tax_Calculator.xlsx)
 
 "Progressive taxation means no one pays their top rate on their whole income" - the tool resolves the most common misunderstanding about Nigerian tax by showing the band-by-band split explicitly.
 
@@ -75,6 +76,8 @@ The calculator applies Nigeria's PAYE progressive tax bands as follows:
    - Income After Tax (Monthly & Annual)
    - Estimated Effective Tax Rate (%)
 6. **Review the tax band breakdown table** to see exactly how your tax is sliced across each band
+
+![](assets/Tax_calculator_sample_income.png)
 
 Link: [Google Sheets version](https://docs.google.com/spreadsheets/d/1jPv-eAd7dQgBNd7Ic3BHBuh1m4WQ9yFt-HXyfOJG1tE/edit?usp=sharing)
 
