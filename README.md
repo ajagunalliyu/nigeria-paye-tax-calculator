@@ -23,7 +23,7 @@ Compliance basis: Personal Income Tax Act (PITA) as amended, current FIRS PAYE g
 
 
 ### Interface
-[Excel_Workbok](assets/Tax_Calculator.xlsx)
+[Excel_Workbook](assets/Tax_Calculator.xlsx)
 
 "Progressive taxation means no one pays their top rate on their whole income" - the tool resolves the most common misunderstanding about Nigerian tax by showing the band-by-band split explicitly.
 
