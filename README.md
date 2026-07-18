@@ -59,7 +59,7 @@ The calculator applies Nigeria's PAYE progressive tax bands as follows:
 
 ### How to Use
 
-1. **Open** `Tax_Calculator.xlsx` in Microsoft Excel (2016 or later recommended) [here](https://docs.google.com/spreadsheets/d/1jPv-eAd7dQgBNd7Ic3BHBuh1m4WQ9yFt-HXyfOJG1tE/edit?usp=sharing)
+1. **Open** `Tax_Calculator.xlsx` in Microsoft Excel (2016 or later recommended) 
 2. **Enter your income** in one of two cells:
    - `Monthly Income (₦)` - if you know your monthly gross pay
    - `Annual Income (₦)` - if you know your annual gross pay
@@ -83,7 +83,7 @@ Link: [Google Sheets version](https://docs.google.com/spreadsheets/d/1jPv-eAd7dQ
 
 ### Conclusion
 
-This tool strips away the complexity of Nigerian PAYE tax computation and puts a clear, auditable, and reusable calculator in the hands of anyone who needs it. Whether you are an employee reconciling your payslip, an HR officer verifying payroll deductions, or an accountant doing quick client estimates — this calculator delivers accurate, band-by-band results with full transparency into the underlying logic.
+This tool strips away the complexity of Nigerian PAYE tax computation and puts a clear, auditable, and reusable calculator in the hands of anyone who needs it. Whether you are an employee reconciling your payslip, an HR officer verifying payroll deductions, or an accountant doing quick client estimates. This calculator delivers accurate, band-by-band results with full transparency into the underlying logic.
 
 Built entirely in Excel with zero macros, it is lightweight, portable, and immediately usable by anyone with a basic understanding of spreadsheets.
 
