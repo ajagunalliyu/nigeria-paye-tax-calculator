@@ -13,10 +13,10 @@ Nigeria's PAYE system taxes income progressively across 6 bands (0% up to ₦800
 ### Data & Method
 
 
--Build: pure Excel formula engine - no macros
--Logic flow: Income Input → Gross Annual Income derived → Deductions applied → Taxable Income → Progressive band tax → Total Tax Due & Net Income
--Key formulas: conditional monthly/annual detection (IF(Annual>0, Annual, Monthly×12)), per-band tax (MAX(0, MIN(Taxable, Ceiling) − Floor) × Rate), capped rent relief (MIN(20% × Annual Rent, ₦500,000)), auto-calculated pension (8% of gross) and NHIS (2.5% of gross)
--Compliance basis: Personal Income Tax Act (PITA) as amended, current FIRS PAYE guidelines; employee-side tax only
+- Build: pure Excel formula engine - no macros
+- Logic flow: Income Input → Gross Annual Income derived → Deductions applied → Taxable Income → Progressive band tax → Total Tax Due & Net Income
+- Key formulas: conditional monthly/annual detection (IF(Annual>0, Annual, Monthly×12)), per-band tax (MAX(0, MIN(Taxable, Ceiling) − Floor) × Rate), capped rent relief (MIN(20% × Annual Rent, ₦500,000)), auto-calculated pension (8% of gross) and NHIS (2.5% of gross)
+- Compliance basis: Personal Income Tax Act (PITA) as amended, current FIRS PAYE guidelines; employee-side tax only
 
 
 ### Interface
